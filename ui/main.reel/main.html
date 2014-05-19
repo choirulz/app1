@@ -23,6 +23,16 @@
                 "isHidden": true
             }
         },
+        "actionEventListener2": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "mybind",
+                "handler": {"@": "rangeController"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -34,6 +44,10 @@
                 {
                     "type": "action",
                     "listener": {"@": "actionEventListener"}
+                },
+                {
+                    "type": "action",
+                    "listener": {"@": "actionEventListener2"}
                 }
             ]
         },
